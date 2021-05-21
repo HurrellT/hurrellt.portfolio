@@ -1,10 +1,10 @@
-import React from 'react';
-import { Avatar, Button, useTheme, Popover } from '@geist-ui/react';
-import * as Icons from 'react-feather';
+import React from "react";
+import { Avatar, Button, useTheme, Popover } from "@geist-ui/react";
+import * as Icons from "react-feather";
 // import Submenu from '../components/navigation/submenu';
 // import UserSettings from '../components/navigation/user-settings';
-import { usePrefers } from '../lib/use-prefers';
-import Link from 'next/link';
+import { usePrefers } from "../lib/use-prefers";
+import Link from "next/link";
 
 const NavBar = () => {
   const theme = useTheme();
@@ -15,27 +15,41 @@ const NavBar = () => {
       <nav className="menu-nav">
         <h1 className="menu-nav__title"></h1>
         <div>
-        <a target="_blank" href="https://github.com/hurrellt" rel="noopener noreferrer">
-          <Button aria-label="Github" className="theme-button" 
-            auto
-            type="abort"
+          <a
+            target="_blank"
+            href="https://github.com/hurrellt"
+            rel="noopener noreferrer"
+          >
+            <Button
+              aria-label="Github"
+              className="theme-button"
+              auto
+              type="abort"
             >
-            <Icons.GitHub size={16} aria-label="Github" />
-          </Button>
+              <Icons.GitHub size={16} aria-label="Github" />
+            </Button>
           </a>
+          <a target="" href="#">
           <Button
             aria-label="Toggle Dark mode"
             className="theme-button"
             auto
             type="abort"
-            onClick={() => prefers.switchTheme(theme.type === 'dark' ? 'light' : 'dark')}
+            onClick={() =>
+              prefers.switchTheme(theme.type === "dark" ? "light" : "dark")
+            }
           >
-            {theme.type === 'dark' ? <Icons.Sun size={16} /> : <Icons.Moon size={16} />}
+            {theme.type === "dark" ? (
+              <Icons.Sun size={16} />
+            ) : (
+              <Icons.Moon size={16} />
+            )}
           </Button>
+          </a>
           {/* <Popover content={<UserSettings />} placement="bottomEnd" portalClassName="user-settings__popover"> */}
-            {/* <button className="user-settings__button"> */}
-              {/* <Avatar text="TLH" /> */}
-            {/* </button> */}
+          {/* <button className="user-settings__button"> */}
+          {/* <Avatar text="TLH" /> */}
+          {/* </button> */}
           {/* </Popover> */}
         </div>
       </nav>
@@ -72,17 +86,6 @@ const NavBar = () => {
           height: 2.25rem;
           padding: 0;
           margin: 0 ${theme.layout.gapHalf};
-        }
-        .user-settings__button {
-          border: none;
-          background: none;
-          padding: 0;
-          margin: 0;
-          appearance: none;
-          cursor: pointer;
-        }
-        :global(.user-settings__popover) {
-          width: 180px !important;
         }
       `}</style>
     </>

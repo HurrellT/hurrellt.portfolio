@@ -1,8 +1,10 @@
 import { GeistProvider, CssBaseline } from "@geist-ui/react";
 import Head from "next/head";
 import { useCallback, useEffect, useState } from "react";
+import Cursor from "../components/Cursor";
 import NavBar from "../components/NavBar";
 import { PrefersContext, themes } from '../lib/use-prefers';
+import './_style.css';
 
 const Portfolio = ({ Component, pageProps }) => {
   const [themeType, setThemeType] = useState('dark');
@@ -22,6 +24,7 @@ const Portfolio = ({ Component, pageProps }) => {
 
   return (
     <>
+      <Cursor />
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
