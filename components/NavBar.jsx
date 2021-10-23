@@ -17,6 +17,20 @@ const NavBar = () => {
         <div>
           <a
             target="_blank"
+            href="https://www.linkedin.com/in/tomas-hurrell/"
+            rel="noopener noreferrer"
+          >
+            <Button
+              aria-label="LinkedIn"
+              className="theme-button"
+              auto
+              type="abort"
+            >
+              <Icons.Linkedin size={16} aria-label="LinkedIn" />
+            </Button>
+          </a>
+          <a
+            target="_blank"
             href="https://github.com/hurrellt"
             rel="noopener noreferrer"
           >
@@ -30,21 +44,21 @@ const NavBar = () => {
             </Button>
           </a>
           <a target="" href="#">
-          <Button
-            aria-label="Toggle Dark mode"
-            className="theme-button"
-            auto
-            type="abort"
-            onClick={() =>
-              prefers.switchTheme(theme.type === "dark" ? "light" : "dark")
-            }
-          >
-            {theme.type === "dark" ? (
-              <Icons.Sun size={16} />
-            ) : (
-              <Icons.Moon size={16} />
-            )}
-          </Button>
+            <Button
+              aria-label="Toggle Dark mode"
+              className="theme-button"
+              auto
+              type="abort"
+              onClick={() =>
+                prefers.switchTheme(theme.type === "dark" ? "light" : "dark")
+              }
+            >
+              {theme.type === "dark" ? (
+                <Icons.Sun size={16} />
+              ) : (
+                <Icons.Moon size={16} />
+              )}
+            </Button>
           </a>
           {/* <Popover content={<UserSettings />} placement="bottomEnd" portalClassName="user-settings__popover"> */}
           {/* <button className="user-settings__button"> */}

@@ -29,15 +29,7 @@ const Portfolio = ({ Component, pageProps }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <title>Tomás Hurrell Portfolio</title>
-        <meta name="og:title" content="React Dashboard Design" />
-        <meta
-          name="og:description"
-          content="Inspired by and based on the Vercel™ Design System."
-        />
-        <meta
-          name="description"
-          content="Inspired by and based on the Vercel™ Design System."
-        />
+        <meta name="og:title" content="Tomás Hurrell Portfolio" />
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
           rel="stylesheet"
