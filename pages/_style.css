@@ -33,10 +33,10 @@ a {
 
 html,
 body {
-  cursor: none;
+  cursor: none !important;
 }
 
 html *,
 body * {
-  cursor: none;
+  cursor: none !important;
 }
