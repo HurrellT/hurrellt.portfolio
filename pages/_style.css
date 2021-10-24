@@ -31,12 +31,15 @@ a {
   color: #fefefe;
 }
 
-html,
-body {
-  cursor: none !important;
-}
-
 html *,
 body * {
   cursor: none !important;
+}
+
+html, body, nav, button {
+  transition: all 250ms
+}
+
+.mb-50vh {
+  margin-bottom: 50vh;
 }
