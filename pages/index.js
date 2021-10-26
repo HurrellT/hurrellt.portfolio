@@ -7,7 +7,11 @@ export default function Home() {
     <Page>
       <Page.Content>
         <h2 className="mt-10vh">Hi! I'm Tomás Hurrell</h2>
-        <h4 className="mb-50vh">and I'm a Front-End Developer.</h4>
+        <p className="mb-50vh">
+          I'm a passionate <span style={{ fontWeight: "500" }}>Front-End Developer</span>, 
+          that loves expressing through the art of building beautiful and maintainable software, 
+          while keeping in mind the design and user experience, altogether.
+        </p>
         {/* <p>This is a simulated page, you can click anywhere to close it.</p> */}
         {/* <WorkCard />
         <Grid.Container gap={2} justify="center">
