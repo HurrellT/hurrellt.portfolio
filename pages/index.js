@@ -6,10 +6,10 @@ export default function Home() {
   return (
     <Page>
       <Page.Content>
-        <h2>Hi! I'm Tomás Hurrell</h2>
+        <h2 className="mt-10vh">Hi! I'm Tomás Hurrell</h2>
         <h4 className="mb-50vh">and I'm a Front-End Developer.</h4>
         {/* <p>This is a simulated page, you can click anywhere to close it.</p> */}
-        {/* <WorkCard />
+        <WorkCard />
         <Grid.Container gap={2} justify="center">
           <Grid xs={24} md={12}>
             <WorkCard width="45%" />
@@ -17,7 +17,7 @@ export default function Home() {
           <Grid xs={24} md={12}>
             <WorkCard width="45%" />
           </Grid>
-        </Grid.Container> */}
+        </Grid.Container>
       </Page.Content>
     </Page>
   );

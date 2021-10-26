@@ -3,8 +3,9 @@ import { Avatar, Button, useTheme, Popover } from "@geist-ui/react";
 import * as Icons from "react-feather";
 // import Submenu from '../components/navigation/submenu';
 // import UserSettings from '../components/navigation/user-settings';
-import { usePrefers } from "../lib/use-prefers";
+import { usePrefers } from "../../lib/use-prefers";
 import Link from "next/link";
+import styles from './NavBar.module.css'
 
 const NavBar = () => {
   const theme = useTheme();
@@ -43,7 +44,7 @@ const NavBar = () => {
               <Icons.GitHub size={16} aria-label="Github" />
             </Button>
           </a>
-          <a target="" href="#">
+          <a target="" href="#theme">
             <Button
               aria-label="Toggle Dark mode"
               className="theme-button"
@@ -70,6 +71,7 @@ const NavBar = () => {
       {/* <Submenu /> */}
       <style jsx>{`
         .menu-nav {
+          backdrop-filter: saturate(100%) blur(16px);
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -77,7 +79,7 @@ const NavBar = () => {
           max-width: 100%;
           margin: 0 auto;
           padding: 0 ${theme.layout.pageMargin};
-          background-color: ${theme.palette.background};
+          background-color: rgba(0,0,0,0.7);
           font-size: 16px;
           height: 54px;
           box-sizing: border-box;
