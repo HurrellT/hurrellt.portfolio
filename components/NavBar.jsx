@@ -1,11 +1,9 @@
+import { Button, useTheme } from "@geist-ui/react";
 import React from "react";
-import { Avatar, Button, useTheme, Popover } from "@geist-ui/react";
 import * as Icons from "react-feather";
 // import Submenu from '../components/navigation/submenu';
 // import UserSettings from '../components/navigation/user-settings';
-import { usePrefers } from "../../lib/use-prefers";
-import Link from "next/link";
-import styles from './NavBar.module.css'
+import { usePrefers } from "../lib/use-prefers";
 
 const NavBar = () => {
   const theme = useTheme();
@@ -14,7 +12,7 @@ const NavBar = () => {
   return (
     <>
       <nav className="menu-nav">
-        <h1 className="menu-nav__title"></h1>
+        <h1 className="menu-nav__title">Tomás Hurrell</h1>
         <div>
           <a
             target="_blank"
@@ -79,7 +77,7 @@ const NavBar = () => {
           max-width: 100%;
           margin: 0 auto;
           padding: 0 ${theme.layout.pageMargin};
-          background-color: rgba(0,0,0,0.7);
+          background-color: ${theme.type === 'dark' ? 'rgba(0,0,0,0.7)' : 'rgba(255,255,255,0.7)'};
           font-size: 16px;
           height: 54px;
           box-sizing: border-box;

@@ -2,7 +2,7 @@ import { CssBaseline, GeistProvider } from "@geist-ui/react";
 import Head from "next/head";
 import { useCallback, useEffect, useState } from "react";
 import Cursor from "../components/Cursor";
-import NavBar from "../components/NavBar/NavBar";
+import NavBar from "../components/NavBar";
 import { PrefersContext, themes } from '../lib/use-prefers';
 import './_style.css';
 
