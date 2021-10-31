@@ -42,6 +42,20 @@ const NavBar = () => {
               <Icons.GitHub size={16} aria-label="Github" />
             </Button>
           </a>
+          <a
+            target="_blank"
+            href="https://mega.nz/file/jE4DBAIB#zgCviOvIFF4_yLOXEJqpxBZFeqpEeG7X1_1IyTjLHQo"
+            rel="noopener noreferrer"
+          >
+            <Button
+              aria-label="Resume"
+              className="theme-button"
+              auto
+              type="abort"
+            >
+              <Icons.FileText size={16} aria-label="Github" />
+            </Button>
+          </a>
           <a target="" href="#theme">
             <Button
               aria-label="Toggle Dark mode"

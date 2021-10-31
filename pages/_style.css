@@ -48,6 +48,22 @@ html, body, nav, button {
   margin-top: 10vh;
 }
 
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.link {
+  align-items: center !important;
+}
+
 nav {
   position: fixed;
   top: 0px;

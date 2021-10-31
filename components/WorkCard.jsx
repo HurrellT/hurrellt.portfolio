@@ -1,18 +1,31 @@
 import { Card, Image, Link, Text } from "@geist-ui/react";
 
-const WorkCard = ({ width }) => {
+const WorkCard = ({
+  width,
+  image,
+  text,
+  secondaryText,
+  link,
+  linkLabel,
+  secondLink,
+  secondLinkLabel,
+  icon,
+  secondIcon }) => {
   return (
     <Card hoverable
       width={width}
+    // className="m-2"
     >
-      <Image src="https://user-images.githubusercontent.com/11304944/76085431-fd036480-5fec-11ea-8412-9e581425344a.png"
+      <Image src={image}
         // height="100px" width="200px" 
         draggable={false} />
-      <Text h4 mb={0}>Geist UI React</Text>
-      <Text type="secondary" small>Modern and minimalist React UI library.</Text>
-      <Card.Footer>
-        <Link block target="_blank" href="https://github.com/geist-org/react">Visit source code on GitHub.</Link>
-      </Card.Footer>
+      <Text h4 mb={0}>{text}</Text>
+      <Text type="secondary" small>{secondaryText}</Text>
+      {link &&
+        <Card.Footer>
+          <Link rel="noopener noreferrer" className="link" block target="_blank" href={link}>{icon}{linkLabel}</Link>
+          {secondLink && <Link rel="noopener noreferrer" className="link" block target="_blank" href={secondLink}>{secondIcon}{secondLinkLabel}</Link>}
+        </Card.Footer>}
     </Card>
   )
 }
