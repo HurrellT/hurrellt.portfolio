@@ -44,7 +44,7 @@ const NavBar = () => {
           </a>
           <a
             target="_blank"
-            href="https://mega.nz/file/jE4DBAIB#zgCviOvIFF4_yLOXEJqpxBZFeqpEeG7X1_1IyTjLHQo"
+            href="https://mega.nz/file/qdZCBLya#w86x6PxTZoTsGZwsIn0wUohhaTxYEuVczmmOGNbXlHs"
             rel="noopener noreferrer"
           >
             <Button
