@@ -52,16 +52,49 @@ html, body, nav, button {
   margin-bottom: 4rem;
 }
 
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
 .mb-2 {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
 }
 
 .m-2 {
   margin: 2rem;
 }
 
+.mt-1 {
+  margin-top: 1rem !important;
+}
+
+.mt-2 {
+  margin-top: 2rem !important;
+}
+
+.mt-3 {
+  margin-top: 3rem !important;
+}
+
+.mr-05 {
+  margin-right: 0.5rem !important;
+}
+
 .link {
   align-items: center !important;
+}
+
+.greyHover {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  transform: scale(0.8);
+  transition: all .3s;
+}
+
+.greyHover:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  transform: scale(1);
 }
 
 nav {
