@@ -5,7 +5,7 @@ import everdonorImage from "../public/images/everdonor.png"
 import fluttercolorImage from "../public/images/fluttercolor.png"
 import geopivotImage from "../public/images/geopivot.png"
 import mercapLogo from "../public/images/logos/mercap-logo-2020.png"
-import atixLogo from "../public/images/logos/logoAtixWhite.png"
+import atixLogo from "../public/images/logos/logo_atix-02.png"
 import coderhouseLogo from "../public/images/logos/coderhouse2.png"
 import * as Icons from "react-feather";
 
