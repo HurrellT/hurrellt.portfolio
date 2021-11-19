@@ -89,6 +89,7 @@ html, body, nav, button {
   -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
   transform: scale(0.8);
   transition: all .3s;
+  max-height:150px;
 }
 
 .greyHover:hover {
