@@ -7,6 +7,7 @@ import geopivotImage from "../public/images/geopivot.png"
 import mercapLogo from "../public/images/logos/mercap-logo-2020.png"
 import atixLogo from "../public/images/logos/logo_atix-02.png"
 import coderhouseLogo from "../public/images/logos/coderhouse2.png"
+import ppiLogo from "../public/images/logos/ppi.png"
 import * as Icons from "react-feather";
 
 export default function Home() {
@@ -72,6 +73,9 @@ export default function Home() {
           </Grid>
           <Grid xs={12} md={6}>
             <Image className="greyHover" src={coderhouseLogo} width={400} height={400} />
+          </Grid>
+          <Grid xs={12} md={6}>
+            <Image className="greyHover" src={ppiLogo} width={400} height={400} />
           </Grid>
         </Grid.Container>
       </Page.Content>
